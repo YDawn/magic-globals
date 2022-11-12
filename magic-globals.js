@@ -59,7 +59,7 @@ Object.defineProperty(global, '__base', {
 Object.defineProperty(global, '__fili', {
   get: function(){
     filid = ':'
-    if ( typeof GLOBAL.__filid !== 'undefined' && GLOBAL.__filid )
+    if ( typeof GLOBAL !== 'undefined' && typeof GLOBAL.__filid !== 'undefined' && GLOBAL.__filid )
     {
       filid = GLOBAL.__filid;
     }
